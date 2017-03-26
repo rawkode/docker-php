@@ -70,7 +70,7 @@ services:
 I do love an existential question! I started using Docker to make my life easier, not a pain in the ass. Currently PHP and Composer are separate 
 "official" images and do not reflect how the PHP developer works with their code.
 
-I had a bit of a (rant)[https://twitter.com/dr4goonis/status/845313850996088832] on Twitter, so I decided to publish the Docker setup I use across my clients.
+I had a bit of a [rant](https://twitter.com/dr4goonis/status/845313850996088832) on Twitter, so I decided to publish the Docker setup I use across my clients.
 
 ### Question 2 - Will there be a PHP 5 or Alpine version?
 
