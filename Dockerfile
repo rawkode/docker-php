@@ -7,6 +7,7 @@ RUN php setup --install-dir=. --filename=composer \
   && rm -rf /composer \
   && apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
      git \
+  && docker-php-ext-install zip \
   && rm -rf /var/lib/apt/lists/*
 
 COPY ./bootstrap.sh /usr/local/bin/bootstrap
