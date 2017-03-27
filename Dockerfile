@@ -4,7 +4,10 @@ WORKDIR /composer
 ADD https://raw.githubusercontent.com/composer/getcomposer.org/master/web/installer setup
 RUN php setup --install-dir=. --filename=composer \
   && mv composer /usr/local/bin/composer \
-  && rm -rf /composer
+  && rm -rf /composer \
+  && apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+     git \
+  && rm -rf /var/lib/apt/lists/*
 
 COPY ./bootstrap.sh /usr/local/bin/bootstrap
 
